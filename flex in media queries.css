@@ -1,0 +1,116 @@
+.parent{
+    background-color:greenyellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+.child-2{
+    display: flex;
+    gap:30px;
+}
+a{
+   text-decoration: none;
+   color: black;
+}
+.input-checkbox-toggler{
+    display: none;
+}
+.ham-icon{
+    display: none;
+}
+@media (max-width:400px){
+    *{
+        box-sizing: border-box;
+    }
+    .parent{
+        flex-direction:flex;
+        position: relative;
+        padding: 10px;
+    }
+    .child-2{
+        position: absolute;
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+        top:70px;
+        left:0px;
+        width: 100%;
+        background-color:red;
+    }
+    .ham-icon{
+        display:block;
+    }
+    .ham-icon:hover{
+        cursor: pointer;
+    }
+    .input-checkbox-toggler:checked ~.child-2{
+        display:flex;
+        flex-direction: column;
+    }
+}
+@media (min-width:401px) and (max-width:768px){
+    *{
+        box-sizing: border-box;
+    }
+    .parent{
+        flex-direction:flex;
+        position: relative;
+        padding: 10px;
+    }
+    .child-2{
+        position: absolute;
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+        top:70px;
+        left:0px;
+        width: 100%;
+        background-color:red;
+    }
+    .ham-icon{
+        display:block;
+    }
+    .ham-icon:hover{
+        cursor: pointer;
+    }
+    .input-checkbox-toggler:checked ~.child-2{
+        display:flex;
+        flex-direction: column;
+    }
+}
+@media (min-width:769px) and (max-width:1025px){
+    *{
+        font-family: cursive;
+    }
+    .parent h2{
+        font-size: 1.5rem;
+    }
+    .child-2 a{
+        font-size:0.9rem;
+    }
+}
+@media (min-width:1026px) and (max-width:1440px){
+    *{
+        font-family: cursive;
+    }
+    .parent h2{
+        font-size: 2.2rem;
+    }
+    .child-2 a{
+        font-size: 1.4rem;
+    }
+}
+@media (min-width:1441px) and (max-width:2560px){
+    *{
+        font-family: verdana;
+        font-size: 700;
+    }
+    .parent h2{
+        font-size: 2.8rem;
+    }
+    .child-2 a{
+        font-size: 1.6rem;
+    }
+}
